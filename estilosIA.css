@@ -35,10 +35,25 @@ img {
     border: 2px solid pink;
     background-color: white;
     max-width: 100%;
+}
+
+/* Ocultar contenedores por defecto */
+#caricaturas-container,
+#paisajes-container,
+#anime-container {
     display: none;
 }
 
-/* Mostrar imágenes según la categoría seleccionada */
-input[type="radio"]:checked + label ~ img {
+/* Mostrar contenedor de imágenes de caricaturas cuando se selecciona el radio "caricaturas" */
+input[type="radio"][id="caricaturas"]:checked ~ #caricaturas-container {
+    display: block;
+}
+
+/* Aplicar un enfoque similar para otras categorías */
+input[type="radio"][id="paisajes"]:checked ~ #paisajes-container {
+    display: block;
+}
+
+input[type="radio"][id="anime"]:checked ~ #anime-container {
     display: block;
 }
