@@ -22,9 +22,7 @@ nav ul li a {
 }
 
 /* Estilos para los input radio y etiquetas */
-input[type="radio"] {
-    display: none;
-}
+
 
 input[type="radio"] + label {
     cursor: pointer;
@@ -35,6 +33,10 @@ img {
     border: 2px solid pink;
     background-color: white;
     max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
 }
 
 /* Ocultar contenedores por defecto */
