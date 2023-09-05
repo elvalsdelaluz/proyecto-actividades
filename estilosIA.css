@@ -1,0 +1,44 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Estilos para los input radio y etiquetas */
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    cursor: pointer;
+}
+
+/* Estilos para las imágenes */
+img {
+    border: 2px solid pink;
+    background-color: white;
+    max-width: 100%;
+    display: none;
+}
+
+/* Mostrar imágenes según la categoría seleccionada */
+input[type="radio"]:checked + label ~ img {
+    display: block;
+}
