@@ -59,3 +59,12 @@ input[type="radio"][id="paisajes"]:checked ~ #paisajes-container {
 input[type="radio"][id="anime"]:checked ~ #anime-container {
     display: block;
 }
+
+
+#consigna-container{
+    display: none;
+}
+
+input[type="radio"][id="consigna"]:checked ~#consigna-container{
+    display: block;
+}
